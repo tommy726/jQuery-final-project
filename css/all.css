@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: Microsoft JhengHei;
+}
+
+/* socialMedia */
+.socialMedia{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 4px;
+}
+.socialMedia img{
+    vertical-align:text-bottom;
+    margin-right: 2px;
+}
+.socialMedia a{
+    font-size: 12px;
+    display: block;
+    padding: 1px 8px 1px 4px;
+    text-decoration: none;
+}
+.fb{
+    border-right: 1px solid #cccccc ;
+    margin-right: 8px;
+    color: #4460a0;
+}
+.tw{
+    color: #00aaec;
+}
+.fb:hover, .tw:hover{
+    color: #000;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.navbar h1 a{
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.list{
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+}
+.list a{
+    display: block;
+    color: #00cc99;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 18px 15px;
+    position: relative;
+}
+.list>li>a::after{
+    content:" ";
+    display:block; 
+    margin-top: 15px;
+    width: 0%;
+    height: 3px;
+    background-color: #00cc99;
+    transition: .4s .1s;
+    position: absolute;
+    left: 0;
+}
+.list>li>a:hover::after{
+    width:100%;
+}
+.listDetail{
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+.listDetail a{
+    background-color: rgba(255, 255, 255, .7);
+    color: #009872;
+}
+.listDetail a:hover{
+    background-color: #00cc99;
+    color: #fff;
+}
+
+/* swiper */
+.swiper{
+    height: 346px;
+    --swiper-navigation-color: #fff;
+    --swiper-navigation-size: 20px;
+    --swiper-theme-color: #fff;
+    position: relative;
+}
+.swiper h2{
+    font-size: 32px;
+    padding: 36px 30px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 92px;
+    z-index: 2;
+    width: 100%;
+}
+.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* course */
+.course{
+    display: flex;
+    font-size: 14px;
+    margin-top: 64px;
+}
+.courseItem{
+    width: 303px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #dbdbdb;
+    margin: 0 14px;
+    padding: 0 20px 22px 20px;
+}
+.courseItem img{
+    width: 260px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.courseItem h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.courseItem p{
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+span{
+    display: block;
+    padding-bottom: 7px;
+}
+.jQueryItem{
+    list-style: disc;
+}
+.jQueryItem li{
+    padding-bottom: 7px;
+    margin-left: 20px;
+}
+
+/* differenceTable */
+.difference{
+    margin-top: 64px;
+    padding: 0 80px;
+}
+.difference h2{
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.difference table{
+    font-size: 14px;
+    text-align: left;
+}
+.difference table th,td{
+    padding: 10px;
+    width: 840px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.difference table thead{
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+.greenText{
+    color: #00a67d;
+}
+
+/* information */
+.information{
+    background: -webkit-linear-gradient(#00644b,#009872);
+    padding: 38px 20px 30px 20px;
+    color: #fff;
+    margin-top: 60px;
+}
+.information h3{
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 34px;
+}
+.information form{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.information textarea{
+    width: 460px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.informationContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.informationContent label{
+    width: 460px;
+}
+.informationContent input{
+    width: 460px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 5px 0 16px 0;
+    padding:9px 10px;
+}
+.informationContent .submit{
+    color: #fff;
+    background-color: #00cc99;
+    border: #00cc99;
+    padding: 10px;
+    border-radius: 3px;
+    width: 70px;
+    margin: 20px 0 0 0;
+}
+.submit:hover{
+    cursor: pointer;
+    color: #00cc99;
+    background-color: #fff;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 14px 50px 20px;
+}
+.footer h2 a{
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+    width: 171px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px;
+}
+.footer li{
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.footer ul li a{
+    color: #e54991;
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+}
+.footer ul li a:hover{
+    color: #9b9b9b;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+/* goTop */
+.goTop{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #00cc99;
+    font-size: 50px;
+    display: block;
+    padding: 15px;
+    display: none;
+}
+.goTop:hover{
+    color: #000;
+}

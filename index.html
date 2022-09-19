@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="jQuery-final-project" />
+    <meta property="og:description" content="jQuery-final-project">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" /> 
+    <meta name="description" content="代入文字描述">
+    <title>jQuery-final-project</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="socialMedia">
+            <li>
+                <a href="#" class="fb"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/facebookIcon.png" alt="FBIcon">粉絲團</a>
+            </li>
+            <li>
+                <a href="#" class="tw"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png" alt="twitterIcon">追隨我們</a>
+            </li>
+        </ul>
+        <div class="navbar">
+            <h1><a href="#">六角學院</a></h1>
+            <ul class="list">
+                <li>
+                    <a href="#">首頁</a>
+                </li>
+                <li>
+                    <a href="#">產品介紹</a>
+                    <ul class="listDetail">
+                        <li><a href="#">UI設計</a></li>
+                        <li><a href="#">前端開發</a></li>
+                        <li><a href="#">後端課程</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">聯絡我們</a>
+                    <ul class="listDetail">
+                        <li><a href="#">部落格</a></li>
+                        <li><a href="#">常見問答</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <h2>六角學院
+                <br>讓您奠定良好的前端基礎
+            </h2>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src="images/banner.png" alt="banner"></div>
+                <div class="swiper-slide"><img src="images/bg_course.png" alt="courseBanner"></div>
+                <div class="swiper-slide"><img src="images/bg_index.png" alt="indexBanner"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <ul class="course">
+            <li class="courseItem">
+                <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" data-lightbox="courseImages" data-title="HTML5"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HTML5"></a>
+                <h2>Html 5 基礎教學</h2>
+                <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程， 講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+            </li>
+            <li class="courseItem">
+                <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" data-lightbox="courseImages" data-title="RWD"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="RWD">
+                </a>
+                <h2>響應式網站設計</h2>
+                <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。 六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+            </li>
+            <li class="courseItem">
+                <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" data-lightbox="courseImages" data-title="jQuery"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery">
+                </a>
+                <h2>jQuery 實戰教學</h2>
+                <span>本課程有以下特點</span>
+                <ul class="jQueryItem">
+                    <li>瞭解變數的使用方法</li>
+                    <li>學習並操作DOM</li>
+                    <li>學習基本數學運算方法</li>
+                    <li>套件的操作及運用</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="difference">
+            <h2>線上及實體課程的差異</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>Hex School 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="greenText">費用</td>
+                        <td class="greenText">較低</td>
+                        <td>較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td>較低</td>
+                        <td class="greenText">很好</td>
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="greenText">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td>課程更新速度</td>
+                        <td class="greenText">普通</td>
+                        <td class="greenText">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td>多次複習</td>
+                        <td class="greenText">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="greenText">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="information">
+            <h3>對我們的課程有興趣嗎？
+                <br>歡迎留下您的資料
+            </h3>
+            <form action="index.html" >
+                <textarea name="comment" id="comment"></textarea>
+                <div class="informationContent">
+                    <label for="name">姓名</label>
+                    <input type="text" name="name" id="name" placeholder="六角講師">
+                    <label for="tel">電話</label>
+                    <input type="tel" name="tel" id="tel" placeholder="0912345678">
+                    <label for="email">信箱</label>
+                    <input type="email" name="email" id="email" placeholder="hexschool@gmail.com">                        
+                    <input class="submit" type="submit" value="送出" >
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <h2><a href="#">六角學院</a></h2>
+            <ul>
+                <li>聯絡我們：<a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a></li>
+                <li>電話：<a href="tel:+886-999123456">0999123456</a></li>
+            </ul>
+        </div>
+        <a href="#" class="goTop">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+    </div>
+<!-- script -->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>
